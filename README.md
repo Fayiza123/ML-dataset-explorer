@@ -1,1 +1,120 @@
-# ML-dataset-explorer
+# Machine Learning Dataset Explorer
+
+A beginner-friendly full-stack project for exploring CRUD operations, REST APIs, and basic machine learning dataset metadata.
+
+## Tech Stack
+
+- Frontend: React, TypeScript, Tailwind CSS v3, Axios, Vite
+- Backend: FastAPI, Pydantic, Uvicorn, SQLite, Pandas
+
+## Features
+
+- Create datasets with name, description, type, row count, feature count, and status
+- View datasets in a responsive card layout
+- Update dataset metadata and status
+- Delete datasets
+- Search datasets by name
+- View dataset statistics
+- Upload a CSV file and automatically detect rows and columns
+
+## Project Structure
+
+- `backend/` FastAPI application and SQLite database
+- `frontend/` React + TypeScript + Tailwind application
+- `ml-dataset-explorer.code-workspace` workspace file for VS Code
+
+## Setup Instructions
+
+### 1. Backend
+
+```powershell
+cd backend
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+
+The API runs at `http://localhost:8000`.
+
+### 2. Frontend
+
+```powershell
+cd frontend
+npm install
+npm run dev
+```
+
+The UI runs at `http://localhost:5173` and connects to the backend at `http://localhost:8000` by default.
+
+If you want to point the frontend at a different backend URL, create a `.env` file in `frontend/` and set:
+
+```env
+VITE_API_URL=http://localhost:8000
+```
+
+## API Documentation
+
+### Health Check
+
+- `GET /health`
+
+### Dataset Endpoints
+
+- `GET /datasets` - Get all datasets
+- `GET /datasets?search=iris` - Search datasets by name
+- `GET /datasets/{id}` - Get a dataset by ID
+- `POST /datasets` - Create a dataset
+- `PUT /datasets/{id}` - Update a dataset
+- `DELETE /datasets/{id}` - Delete a dataset
+- `GET /datasets/stats` - Get dataset statistics
+- `POST /datasets/upload-csv` - Upload a CSV file and create a dataset from it
+
+### Create Dataset Example
+
+```json
+{
+  "name": "Iris Dataset",
+  "description": "Flower classification dataset",
+  "type": "Tabular",
+  "rows": 150,
+  "features": 4,
+  "status": "Ready for Training"
+}
+```
+
+### Sample Response
+
+```json
+{
+  "id": 1,
+  "name": "Iris Dataset",
+  "description": "Flower classification dataset",
+  "type": "Tabular",
+  "rows": 150,
+  "features": 4,
+  "status": "Ready for Training"
+}
+```
+
+## Screenshots
+
+Add application screenshots here before submission.
+
+Suggested screenshots:
+
+- `docs/screenshots/home.png`
+- `docs/screenshots/create-dataset.png`
+- `docs/screenshots/edit-dataset.png`
+- `docs/screenshots/stats-dashboard.png`
+
+## Learning Notes
+
+This project demonstrates:
+
+- React components, props, and hooks
+- State updates and UI re-rendering
+- REST API requests and responses
+- FastAPI routing and request validation
+- Full-stack data flow with Axios
+- Basic dataset analysis concepts
