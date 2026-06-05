@@ -99,14 +99,8 @@ VITE_API_URL=http://localhost:8000
 
 ## Screenshots
 
-Add application screenshots here before submission.
+<img width="1366" height="768" alt="Screenshot (22)" src="https://github.com/user-attachments/assets/2e1826b7-9c7a-46f1-9e7a-be562e5a87b5" />
 
-Suggested screenshots:
-
-- `docs/screenshots/home.png`
-- `docs/screenshots/create-dataset.png`
-- `docs/screenshots/edit-dataset.png`
-- `docs/screenshots/stats-dashboard.png`
 
 ## Learning Notes
 
