@@ -99,7 +99,11 @@ VITE_API_URL=http://localhost:8000
 
 ## Screenshots
 
-<img width="1366" height="768" alt="Screenshot (22)" src="https://github.com/user-attachments/assets/2e1826b7-9c7a-46f1-9e7a-be562e5a87b5" />
+<img width="1366" height="768" alt="Screenshot (23)" src="https://github.com/user-attachments/assets/29b88257-1f42-4da3-9497-0a65ef5dc122" />
+<img width="1366" height="768" alt="Screenshot (24)" src="https://github.com/user-attachments/assets/1ada6b28-87c2-4fc0-95ae-c7c3ce5f23a1" />
+<img width="1366" height="768" alt="Screenshot (25)" src="https://github.com/user-attachments/assets/b6305b01-e418-41d1-ab65-5162fed2379a" />
+<img width="1366" height="768" alt="Screenshot (26)" src="https://github.com/user-attachments/assets/0c3f19f0-5471-4c30-aa05-9c83bf5a6f3b" />
+
 
 
 ## Learning Notes
